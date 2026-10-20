@@ -174,13 +174,13 @@ class _PlayerScreenState extends State<PlayerScreen> {
                 top: 44,
                 left: 0,
                 right: 0,
-                child: _TopControls(),
+                child: _topControls(),
               ),
               Positioned(
                 bottom: 0,
                 left: 0,
                 right: 0,
-                child: _BottomControls(),
+                child: _bottomControls(),
               ),
             ],
           ],
@@ -189,7 +189,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
     );
   }
 
-  Widget _TopControls() {
+  Widget _topControls() {
     return Container(
       height: 100,
       decoration: BoxDecoration(
@@ -258,7 +258,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
     );
   }
 
-  Widget _BottomControls() {
+  Widget _bottomControls() {
     return Container(
       height: 260,
       decoration: BoxDecoration(
@@ -286,7 +286,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
                     width: 56,
                     height: 56,
                     decoration: BoxDecoration(
-                      color: const Color(0xFFFFFFFF).withOpacity(0.2),
+                      color: const Color(0xFFFFFFFF).withValues(alpha: 0.2),
                       shape: BoxShape.circle,
                     ),
                     child: Icon(
@@ -384,7 +384,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
         width: 44,
         height: 44,
         decoration: BoxDecoration(
-          color: const Color(0xFFFFFFFF).withOpacity(0.2),
+          color: const Color(0xFFFFFFFF).withValues(alpha: 0.2),
           shape: BoxShape.circle,
         ),
         child: Icon(icon, size: 24, color: const Color(0xFFFFFFFF)),
@@ -401,7 +401,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
         height: 44,
         decoration: BoxDecoration(
           border: Border.all(
-            color: const Color(0xFFFFFFFF).withOpacity(0.3),
+            color: const Color(0xFFFFFFFF).withValues(alpha: 0.3),
             width: 1,
           ),
           shape: BoxShape.circle,
@@ -421,7 +421,7 @@ class _BufferIndicator extends StatelessWidget {
       width: 40,
       height: 40,
       decoration: BoxDecoration(
-        color: const Color(0xFF000000).withOpacity(0.7),
+        color: const Color(0xFF000000).withValues(alpha: 0.7),
         borderRadius: BorderRadius.circular(10),
       ),
       child: const Center(

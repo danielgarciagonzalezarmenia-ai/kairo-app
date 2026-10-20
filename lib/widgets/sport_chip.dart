@@ -23,7 +23,7 @@ class SportChip extends StatelessWidget {
         height: 76,
         decoration: BoxDecoration(
           color: selected
-              ? const Color(0xFF0A84FF).withOpacity(0.18)
+              ? const Color(0xFF0A84FF).withValues(alpha: 0.18)
               : CupertinoColors.systemGrey6.resolveFrom(context),
           borderRadius: BorderRadius.circular(16),
           border: selected

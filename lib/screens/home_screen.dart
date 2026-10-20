@@ -33,8 +33,8 @@ class _HomeScreenState extends State<HomeScreen> {
   final _token = TokenService();
   final _prefs = PreferencesService();
   List<Event> _liveEvents = [];
-  List<Event> _upcomingEvents = [];
-  List<Event> _featuredEvents = [];
+  final List<Event> _upcomingEvents = [];
+  final List<Event> _featuredEvents = [];
   bool _loading = true;
   String? _error;
 
@@ -158,7 +158,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     color: _heroController.hasClients &&
                             _heroController.page!.round() == i
                         ? const Color(0xFF0A84FF)
-                        : const Color(0xFFFFFFFF).withOpacity(0.4),
+                        : const Color(0xFFFFFFFF).withValues(alpha: 0.4),
                     shape: BoxShape.circle,
                   ),
                 ),

@@ -45,7 +45,7 @@ class EventCard extends StatelessWidget {
                           height: 150,
                           width: double.infinity,
                           fit: BoxFit.cover,
-                          errorBuilder: (_, __, ___) => Container(
+                          errorBuilder: (_, _, _) => Container(
                             height: 150,
                             color: isDark
                                 ? const Color(0xFF2C2C2E)
@@ -77,11 +77,11 @@ class EventCard extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(
                           horizontal: 8, vertical: 4),
                       decoration: BoxDecoration(
-                        color: const Color(0xFFFF3B30).withOpacity(0.9),
+                        color: const Color(0xFFFF3B30).withValues(alpha: 0.9),
                         borderRadius: BorderRadius.circular(4),
                         boxShadow: [
                           BoxShadow(
-                            color: const Color(0xFFFF3B30).withOpacity(0.4),
+                            color: const Color(0xFFFF3B30).withValues(alpha: 0.4),
                             blurRadius: 6,
                             offset: Offset.zero,
                           ),
