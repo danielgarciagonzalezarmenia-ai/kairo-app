@@ -35,7 +35,7 @@ jobs:
       - name: Empaquetar IPA sin firmar
         run: |
           set -euo pipefail
-          APP="build/ios/iphoneos/Kairo.app"
+          APP="build/ios/iphoneos/Runner.app"
           rm -rf build/ipa
           mkdir -p build/ipa/Payload
           cp -R "$APP" build/ipa/Payload/
